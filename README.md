@@ -1,4 +1,4 @@
-![Screenshot (126)](https://github.com/stavonofa/UASpemrogvisual/assets/98897147/da82ad58-06dc-4da7-ab82-b1f257dd5a2b)Nama : Irfan Fadlurrahman 
+Nama : Irfan Fadlurrahman 
 Kelas : TI.21.A3
 Nim : 312110465
 ********************************************
