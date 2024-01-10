@@ -1,0 +1,189 @@
+object Form3: TForm3
+  Left = 303
+  Height = 489
+  Top = 211
+  Width = 936
+  Caption = 'Data Master'
+  ClientHeight = 489
+  ClientWidth = 936
+  LCLVersion = '3.0.0.1'
+  object Label1: TLabel
+    Left = 344
+    Height = 33
+    Top = 8
+    Width = 308
+    Caption = 'Aplikasi Data Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Showcard Gothic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 72
+    Height = 152
+    Top = 248
+    Width = 792
+    Color = clWindow
+    Columns = <>
+    DataSource = DataSource1
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 272
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Tambah'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 488
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Ubah'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 384
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Hapus'
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 64
+    Height = 33
+    Top = 424
+    Width = 473
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 33
+    ClientWidth = 473
+    Options = []
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 88
+    Height = 20
+    Top = 40
+    Width = 66
+    Caption = 'ID Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    OnClick = Label2Click
+  end
+  object Button4: TButton
+    Left = 168
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Edit1'
+    TabOrder = 5
+  end
+  object Label3: TLabel
+    Left = 88
+    Height = 20
+    Top = 72
+    Width = 57
+    Caption = 'Kategori'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Button5: TButton
+    Left = 168
+    Height = 25
+    Top = 72
+    Width = 152
+    Caption = 'Edit2'
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 88
+    Height = 20
+    Top = 112
+    Width = 40
+    Caption = 'Nama'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Button6: TButton
+    Left = 168
+    Height = 25
+    Top = 112
+    Width = 152
+    Caption = 'Edit3'
+    TabOrder = 7
+  end
+  object Label5: TLabel
+    Left = 88
+    Height = 20
+    Top = 144
+    Width = 53
+    Caption = 'Gambar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Button7: TButton
+    Left = 168
+    Height = 25
+    Top = 144
+    Width = 152
+    Caption = 'Edit4'
+    TabOrder = 8
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'barang_aplikasi'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'D:\SERVER\mysql-5.7.44-winx64\lib\libmysql.dll'
+    Left = 88
+    Top = 208
+  end
+  object ZQuery1: TZQuery
+    Connection = ZConnection1
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM data_barang'
+    )
+    Params = <>
+    Left = 152
+    Top = 208
+  end
+  object DataSource1: TDataSource
+    DataSet = ZQuery1
+    Left = 216
+    Top = 208
+  end
+end
