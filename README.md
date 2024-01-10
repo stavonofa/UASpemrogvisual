@@ -1,5 +1,7 @@
-///Nama : Irfan Fadlurrahman///
+Nama : Irfan Fadlurrahman
+*
 Kelas : TI.21.A3
+*
 Nim : 312110465
 ********************************************
 
