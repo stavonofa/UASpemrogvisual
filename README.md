@@ -5,7 +5,7 @@ Kelas : TI.21.A3
 Nim : 312110465
 ********************************************
 
-Link Youtube : 
+Link Youtube : https://youtu.be/sR_-AvgRNA8?si=_pzzD3UwRm_G7aah
 
 
 ********************************************
